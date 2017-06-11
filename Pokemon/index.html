@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon Website</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js">
+    </script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+       $.get("http://pokeapi.co/api/v1/pokemon/1/", function(res) {
+         console.log(res.types[0].name);
+         console.log(res.types[1].name);
+      }, "json");
+    for(var i = 1; i <= 151; i++){
+      var curimg ='<img src="http://pokeapi.co/media/img/' + i +  '.png">';
+      $("body").append(curimg);
+    }
+
+    });
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

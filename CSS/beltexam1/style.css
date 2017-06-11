@@ -1,0 +1,40 @@
+.container {
+  width: 970px;
+  height: 600px;
+  background-color: gray;
+}
+
+.header {
+  width: 970px;
+  height: 200px;
+  background-color: blue;
+}
+
+.header img {
+  margin: 10px;
+}
+
+.header p {
+  margin-left: 550px;
+  display: inline-block;
+  vertical-align: top;
+}
+.head2 {
+  height: 200px;
+}
+.container > img{
+  width:970px;
+  display: block;
+}
+
+.content {
+  width: 970px;
+  height: 300px;
+  background-color: pink;
+}
+
+.footer {
+  width: 970px;
+  height: 200px;
+  background-color: red;
+}
